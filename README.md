@@ -7,4 +7,4 @@ The Script works by listening for  keyboard events, and when a
  key is pressed, it logs the keys to a text file in order to keep track of it.
 
 
-         CURRENTLY NOT WORKING
+         CURRENTLY NOT WORKING AS INTENDED
